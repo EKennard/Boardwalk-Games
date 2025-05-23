@@ -30,6 +30,10 @@ h1, h2, h3 {
     color: var(--hightlight-color)
 }
 
+/* navbar */
+#navbar {
+    background-color: var(--primary-color)
+}
 
 /*.container, .row {
     border: 2px solid black;

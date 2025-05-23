@@ -23,14 +23,22 @@ body {
 
 h1, h2, h3 {
     font-family: var(--secondary-font);
-    color: var(--primary-color)
+    color: var(--primary-color);
+    text-transform: uppercase;
 }
 
 .sub-heading-color {
     color: var(--hightlight-color)
 }
 
-/* navbar */
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* ----------------------------------------- Navbar --------------------------------------------------------*/
 #navbar {
     background-color: var(--primary-color)
 }
@@ -41,6 +49,18 @@ h1, h2, h3 {
 
 
 
+
+/* --------------------------------------------------Header --------------------------------------------------*/
+#header .lead {
+    font-family: var(--secondary-font);
+}
+
+
+
+
+
+
+/* ----------------------------------------------Testing styles ----------------------------------------------- */
 /*.container, .row {
     border: 2px solid black;
 }

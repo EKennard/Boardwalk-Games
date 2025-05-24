@@ -32,7 +32,7 @@ h2 {
 }
 
 h2 {
-	margin: bottom 2rem;
+	margin-bottom: 2rem;
 }
 
 .sub-heading-color {
@@ -149,7 +149,7 @@ h2 {
 }
 
 .reserveInput {
-	margin-bottom: 6px;
+	margin-bottom: 10px;
 }
 
 .reserve-btn {
@@ -191,15 +191,6 @@ h2 {
 #contact .table-dark * {
 	background-color: transparent;
 }
-
-/* ----------------------------------------------Testing styles ----------------------------------------------- */
-/*.container, .row {
-    border: 2px solid black;
-}
-.col-12 {
-    border: 2px solid black;
-    background-color: lightgray;
-}*/
 
 /* -----------------------------------------------Media queries ----------------------------------------------- */
 

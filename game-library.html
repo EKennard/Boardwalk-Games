@@ -329,7 +329,7 @@
 
             <div class="reserveInput col-sm-12 col-lg-4">
               <label for="fullName" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="fullName">
+              <input type="text" class="form-control" id="fullName" required aria-describedby="nameHelp">
             </div>
 
             <div class="reserveInput col-sm-12 col-lg-4">
@@ -342,25 +342,28 @@
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
             </div>
 
-            <div class=" col-sm-12 col-lg-4">
-              <label for="dropdown-menu" class="form-label">Select game</label><br>
-              <button class="btn custom-button-outline dropdown-toggle " type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Select game
+            <div class=" col-sm-12 col-lg-6">
+              <label for="game-select" class="form-label">Event type</label>
+                <select id="game-select" class="dropdown-toggle form-control" name="game-select" required>
+                  <option value="" selected>Select game</option>
+                  <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                  <option value="mystic-woods">Mystic Woods</option>
+                  <option value="captains-gambit">Captain's Gambit</option>
+                  <option value="critter-quest">Critter Quest</option>
+                  <option value="settlers-og-catan">Setters of Catan</option>
+                  <option value="monoploy">Monopoly</option>
+                  <option value="exploding-kittens">Exploding Kittens</option>
+                  <option value="cluedo">Cluedo</option>
+                </select>
               </button>
-
-              <ul class = "dropdown-menu col-sm-12 col-lg-6">
-                <li><a class="dropdown-item" href="#" onclick="updateSelection('Select game')">Select game</a></li>
-                <li><a class="dropdown-item" href="#" onclick="updateSelection('Galaxy Pioneers')">Galaxy Pioneers</a></li>
-                <li><a class="dropdown-item" href="#" onclick="updateSelection('Mystic Woods')">Mystic Woods</a></li>
-                <li><a class="dropdown-item" href="#" onclick="updateSelection('Critter Quest')">Critter Quest</a></li>
-                <li><a class="dropdown-item" href="#" onclick="updateSelection('Setters of Catan')">Setters of Catan</a></li>
-                <li><a class="dropdown-item" href="#" onclick="updateSelection('Monopoly')">Monopoly</a></li>
-                <li><a class="dropdown-item" href="#" onclick="updateSelection('Exploding Kittens')">Exploding Kittens</a></li>
-                <li><a class="dropdown-item" href="#" onclick="updateSelection('Cluedo')">Cluedo</a></li>
-              </ul>
+              
             </div>
 
+            <div class=" col-sm-12 col-lg-6">
+              <label for="date-select" class="form-label">Date</label>
+              <input type="date" class="form-control" id="date-select" name="date-select" required>
+
+            </div>
           </div>
 
           <button type="submit" class="btn custom-button-outline w-auto reserve-btn">Submit</button>

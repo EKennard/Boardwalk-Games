@@ -47,28 +47,28 @@ h2 {
 /* ----------------------------------------------- Buttons ----------------------------------------------------- */
 
 .custom-button-filled {
-    border: 2px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-    color: white;
+	border: 2px solid var(--secondary-color);
+	background-color: var(--secondary-color);
+	color: white;
 }
 
 .custom-button-filled:hover {
-    border: var(--highlight-color);
-    background-color: var(--highlight-color);
-    color: white;
+	border: var(--highlight-color);
+	background-color: var(--highlight-color);
+	color: white;
 }
 
 .custom-button-outline {
-    border: 3px solid var(--highlight-color);
-    padding: 7px 25px;
-    color: var(--highlight-color);
+	border: 3px solid var(--highlight-color);
+	padding: 7px 25px;
+	color: var(--highlight-color);
+	margin-bottom: 20px;
 }
 
 .custom-button-outline:hover {
-    background-color: var(--highlight-color);
-    color: white;
+	background-color: var(--highlight-color);
+	color: white;
 }
-
 
 /* ----------------------------------------- Navbar --------------------------------------------------------*/
 #navbar {
@@ -84,96 +84,113 @@ h2 {
 	font-family: var(--secondary-font);
 }
 
-
 /* -------------------------------------------------- Sevices -------------------------------------------------- */
 
 #services .card-footer {
-    font-weight: bold;
-    color: var(--highlight-color);
-    background-color: transparent;
+	font-weight: bold;
+	color: var(--highlight-color);
+	background-color: transparent;
 }
 
 #services .card {
-    margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 /*  -------------------------------------------------- Events --------------------------------------------------------- */
 
 .events-title {
-    padding: 40px;
+	padding: 40px;
 }
 
 #events .table {
-    font-size: 0.75rem;
+	font-size: 0.75rem;
 }
 
 .student-discount {
-    background-color: var(--highlight-color);
-    color: white;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1px 20px;
-    display: flex;
-    justify-content: center;
+	background-color: var(--highlight-color);
+	color: white;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1px 20px;
+	display: flex;
+	justify-content: center;
 }
 
 .student-discount p {
-    margin-bottom:0%;
-    justify-self: center;
+	margin-bottom: 0%;
+	justify-self: center;
 }
 
 #events .btn {
-    display: block;
-    margin: 10px auto 0 auto;
-    max-width: fit-content;
+	display: block;
+	margin: 10px auto 0 auto;
+	max-width: fit-content;
 }
 
 /* ---------------------------------------------------- Games Library ------------------------------------------------- */
-#new-games .card, #fav-games .card {
-    border:none;
+#new-games .card,
+#fav-games .card {
+	border: none;
 }
 
+/*  ---------------------------------------------- Reservation Form --------------------------------------------------- */
+#reservation {
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-self: center;
+	max-width: fit-content;
+}
 
+#reservation-form .form {
+	margin-bottom: 1rem;
+}
+
+.reserveInput {
+	margin-bottom: 6px;
+}
+
+.reserve-btn {
+	display: flex;
+	justify-self: right;
+}
 
 /* ------------------------------------------------ Footer / Contacts ---------------------------------------------------*/
 #contact {
-    background-color: var(--primary-color);
-    color: white;
-    padding-bottom: 3rem;
+	background-color: var(--primary-color);
+	color: white;
+	padding-bottom: 3rem;
 }
 
 #contact h2 {
-    color: white;
+	color: white;
 }
 
 #contact .sub-heading-color {
-    color: var(--highlight-color-light);
+	color: var(--highlight-color-light);
 }
 
 #contact i {
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-    margin-right: 15px;
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+	margin-right: 15px;
 }
 
 #contact .social-links i {
-    color: var(--highlight-color-light);
-    font-size: 1.9rem;
-    transition: color 0.3s ease-in-out;
+	color: var(--highlight-color-light);
+	font-size: 1.9rem;
+	transition: color 0.3s ease-in-out;
 }
 
 #contact .social-links i:hover {
-    color: var(--secondary-color);
-} 
-
-#contact .table-dark * {
-    background-color: transparent;
+	color: var(--secondary-color);
 }
 
-
-
-
+#contact .table-dark * {
+	background-color: transparent;
+}
 
 /* ----------------------------------------------Testing styles ----------------------------------------------- */
 /*.container, .row {
@@ -184,65 +201,70 @@ h2 {
     background-color: lightgray;
 }*/
 
-
 /* -----------------------------------------------Media queries ----------------------------------------------- */
 
 /* Medium devices (tablets, 768px and up */
 @media screen and (min-width: 768px) {
-    /* makes all service cards the same height for consistency */
-    #services ,card-body {
-        min-height: 191px;
-    }
+	/* makes all service cards the same height for consistency */
+	#services,
+	card-body {
+		min-height: 191px;
+	}
 
-    #events .table {
-    font-size: 1rem;
-    }
+	#events .table {
+		font-size: 1rem;
+	}
 
-    .student-discount p {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        text-align: center;
-    }
-
+	.student-discount p {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 /* Large devices (small laptops, 992px and up */
 @media screen and (min-width: 992px) {
-    /* makes all service cards the same height for consistency */
-    #services .card-body {
-        min-height: auto;
-    }
+	/* makes all service cards the same height for consistency */
+	#services .card-body {
+		min-height: auto;
+	}
 
-
-    .student-discount {
-        display:flex;
-        justify-self:right;
-    }
-    .student-discount p {
-        padding: 2px 8px;
-        display: inline-block;
-        text-align: center;  
-    }
-}    
+	.student-discount {
+		display: flex;
+		justify-self: right;
+	}
+	.student-discount p {
+		padding: 2px 8px;
+		display: inline-block;
+		text-align: center;
+	}
+}
 
 /* Extra large devices (large laptops, 1200px and up */
 @media screen and (min-width: 1200px) {
-    /* makes all service cards the same height for consistency */
-    #services .card-body {
-        min-height: 220px;
-    }
+	/* makes all service cards the same height for consistency */
+	#services .card-body {
+		min-height: 220px;
+	}
 
-    .student-discount {
-        margin-left: auto;
-        margin-right: 10%;
-    }
+	.student-discount {
+		margin-left: auto;
+		margin-right: 10%;
+	}
+
+    @media screen and (min-width: 1200px) {
+  .reserveInput {
+    display: flex;
+    flex-direction: column;
+  }
+}
 }
 
 /* Extra extra large devices (large laptops, 1400px and up */
 @media screen and (min-width: 1400px) {
-    /* makes all service cards the same height for consistency */
-    #services .card-body {
-        min-height: 195px;
-    }
+	/* makes all service cards the same height for consistency */
+	#services .card-body {
+		min-height: 195px;
+	}
 }

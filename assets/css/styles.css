@@ -9,7 +9,7 @@
 	--secondary-font: "Macondo", cursive;
 	--primary-color: #3a2620;
 	--secondary-color: #aa9581;
-	--hightlight-color: #416a8e;
+	--highlight-color: #416a8e;
 	--light-highlight-color: #7a9fc2;
 }
 
@@ -36,7 +36,7 @@ h2 {
 }
 
 .sub-heading-color {
-	color: var(--hightlight-color);
+	color: var(--highlight-color);
 }
 
 .section {
@@ -53,8 +53,8 @@ h2 {
 }
 
 .custom-button-filled:hover {
-    border: var(--hightlight-color);
-    background-color: var(--hightlight-color);
+    border: var(--highlight-color);
+    background-color: var(--highlight-color);
     color: white;
 }
 
@@ -65,7 +65,7 @@ h2 {
 }
 
 .custom-button-outline:hover {
-    background-color: var(--hightlight-color);
+    background-color: var(--highlight-color);
     color: white;
 }
 
@@ -97,7 +97,37 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/*  -------------------------------------------------- Events --------------------------------------------------------- */
 
+.events-title {
+    padding: 40px;
+}
+
+#events .table {
+    font-size: 0.75rem;
+}
+
+.student-discount {
+    background-color: var(--highlight-color);
+    color: white;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.student-discount p {
+    margin-bottom:0%;
+    justify-self: center;
+}
+
+#events .btn {
+    display: block;
+    margin: 10px auto 0 auto;
+    max-width: fit-content;
+}
 
 /* ---------------------------------------------------- Games Library ------------------------------------------------- */
 #new-games .card, #fav-games .card {
@@ -163,6 +193,18 @@ h2 {
     #services ,card-body {
         min-height: 191px;
     }
+
+    #events .table {
+    font-size: 1rem;
+    }
+
+    .student-discount p {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 /* Large devices (small laptops, 992px and up */
@@ -171,7 +213,18 @@ h2 {
     #services .card-body {
         min-height: auto;
     }
-}
+
+
+    .student-discount {
+        display:flex;
+        justify-self:right;
+    }
+    .student-discount p {
+        padding: 2px 8px;
+        display: inline-block;
+        text-align: center;  
+    }
+}    
 
 /* Extra large devices (large laptops, 1200px and up */
 @media screen and (min-width: 1200px) {
@@ -179,9 +232,14 @@ h2 {
     #services .card-body {
         min-height: 220px;
     }
+
+    .student-discount {
+        margin-left: auto;
+        margin-right: 10%;
+    }
 }
 
-/* Extra extra large devices (large laptops, 1200px and up */
+/* Extra extra large devices (large laptops, 1400px and up */
 @media screen and (min-width: 1400px) {
     /* makes all service cards the same height for consistency */
     #services .card-body {
